@@ -9,6 +9,7 @@ function sandbox() {
   const bias = 10 ** Number(byId('bias').value);
   const result = scenarioRank(report.reference.shareAbove, report.model.population, bias);
   byId('bias-value').textContent = number(Math.round(bias)) + '×';
+  byId('bias').setAttribute('aria-valuetext', number(Math.round(bias)) + ' times heavy-user selection bias');
   byId('sandbox-rank').textContent = rank(result);
   byId('sandbox-top').textContent = 'SCENARIO TOP ' + (100 * result / report.model.population).toFixed(3) + '% · ASSUMED POPULATION';
 }
