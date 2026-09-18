@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <title>MARCUS KIM'S CODEX TOKENMAXXING RANKING</title>
+  <meta name="description" content="Marcus Kim's measured Codex tokens and an unapologetically assumption-based global ranking. Real local counts. Speculative world rank. Fully open source.">
+  <meta property="og:title" content="MARCUS KIM'S CODEX TOKENMAXXING RANKING">
+  <meta property="og:description" content="The least possible bullshit bullshit rank. Measured tokens, transparent assumptions, absolutely no official OpenAI ranking.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23050505'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='monospace' font-size='44' font-weight='bold' fill='white'%3E%23%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to ranking</a>
+  <header class="topbar">
+    <a class="brand" href="/" aria-label="Tokenmaxxing home"><span class="brand-mark">⌘</span><span>MK / TOKENMAXXING</span></a>
+    <nav aria-label="Primary"><a href="#receipts">THE RECEIPTS</a><a href="#method">THE BULLSHIT</a><a id="repo-top" href="https://github.com/marcusykim/codex-tokenmaxxing" target="_blank" rel="noopener">FORK IT <span aria-hidden="true">↗</span></a></nav>
+  </header>
+  <main id="main">
+    <div id="load-error" class="error" hidden role="alert">The token report could not load. <button id="retry">Try again</button></div>
+    <section class="ranking" aria-labelledby="title">
+      <div class="section-top"><p class="eyebrow">PERSONAL STATS / GLOBAL SPECULATION</p><p class="snapshot-label" id="updated">Loading measured usage…</p></div>
+      <h1 id="title">MARCUS KIM'S <br>CODEX TOKENMAXXING RANKING</h1>
+      <div class="rank-layout">
+        <div class="rank-content">
+          <p class="rank-label">THE LEAST POSSIBLE<br>BULLSHIT BULLSHIT RANK</p>
+          <div class="rank-number" aria-live="polite"><span class="hash">#</span><span id="median-rank">—</span><span class="asterisk" aria-hidden="true">*</span></div>
+          <div class="rank-caption"><span class="outline-label">SCENARIO MEDIAN</span><span>against an assumed <strong id="population">25 million</strong> users</span></div>
+          <p class="honesty">* Real token counts. Speculative world rank.<br>No official OpenAI leaderboard exists here.</p>
+        </div>
+        <div class="mascot-wrap"><img id="mascot" src="/assets/token-gremlin.png" alt="A monochrome cartoon token gremlin surfing a keyboard through flames" width="480" height="480" fetchpriority="high"><span class="mascot-caption">CERTIFIED CONTEXT GOBLIN</span></div>
+      </div>
+      <div class="rank-range" id="rank-range">
+        <div><span class="eyebrow">OPTIMISTIC SCENARIO</span><strong id="rank-low">—</strong><span>maximum heavy-user bias</span></div>
+        <div class="range-visual" aria-hidden="true"><div class="range-line"><i></i></div><span>THE HONESTLY HUGE BULLSHIT RANGE</span></div>
+        <div><span class="eyebrow">CONSERVATIVE SCENARIO</span><strong id="rank-high">—</strong><span>minimum heavy-user bias</span></div>
+      </div>
+      <p class="range-note">An assumption range, not a statistical confidence interval. The true rank may fall outside it.</p>
+    </section>
+    <section class="receipts" id="receipts" aria-labelledby="receipts-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / MEASURED, NOT MANIFESTED</p><h2 id="receipts-title">THE TOKEN RECEIPTS.</h2></div><a href="/data.json" download="tokenmaxxing-data.json" class="text-link">DOWNLOAD DATA ↗</a></div>
+      <div class="metrics">
+        <article><p>ALL-TIME TOKEN ACTIVITY</p><strong id="total-tokens">—</strong><span id="active-days">From local Codex logs</span></article>
+        <article><p>LAST 7 CALENDAR DAYS</p><strong id="week-tokens">—</strong><span>Includes today, Pacific time</span></article>
+        <article><p>TODAY'S DAMAGE</p><strong id="today-tokens">—</strong><span id="today-date">At the last refresh</span></article>
+        <article><p>PERSONAL BEST / DAY</p><strong id="best-tokens">—</strong><span id="best-date">From recorded daily usage</span></article>
+      </div>
+      <div class="chart-heading"><h3>30 DAYS IN THE TOKEN MINES</h3><div class="chart-key"><span class="key-cached"></span> Cached input <span class="key-fresh"></span> Fresh input + output</div></div>
+      <div class="chart-scale"><span id="chart-max">— tokens / day</span><span>HOVER OR FOCUS A BAR FOR ITS TOTAL</span></div>
+      <div class="chart" id="chart" aria-label="Daily Codex token activity for the last 30 days"></div>
+      <div class="chart-footer"><span id="chart-start">—</span><span id="chart-end">—</span></div>
+      <div class="cache-explainer"><strong><span id="cache-share">—</span> IS CACHED INPUT.</strong><p>Reused context still counts as token activity. It isn't all newly generated text. Reasoning is already included in output; we don't count it twice.</p><span id="cost" class="cost-label">— API equivalent · not a bill</span></div>
+    </section>
+    <section class="method" id="method" aria-labelledby="method-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / TURN THE BULLSHIT KNOB</p><h2 id="method-title">SHOW YOUR ASSUMPTIONS.</h2></div><span class="stamp">OPEN MATH.<br>ZERO AUTHORITY.</span></div>
+      <div class="method-layout">
+        <div class="assumptions">
+          <p class="intro">We have a small volunteer leaderboard. We do <em>not</em> have 25 million people's usage. This model makes that missing leap visible.</p>
+          <div class="sample-proof"><span>THE OBSERVED ANCHOR</span><strong><span id="above-count">—</span> / <span id="sample-count">—</span></strong><p>public Tokscale users have more all-time token activity than Marcus's local Codex total. That board mixes tools and history lengths. It is an imperfect comparison.</p></div>
+          <p class="model-note">The made-up part: assume someone above this token threshold is <strong>100× to 10,000×</strong> as likely to join that leaderboard as someone below it. A log-uniform prior makes <strong>1,000×</strong> the median assumption. These multipliers are judgment calls, not fitted evidence.</p>
+        </div>
+        <div class="calculator">
+          <div class="knob-heading"><label for="bias">HEAVY-USER SELECTION BIAS</label><output for="bias" id="bias-value">1,000×</output></div>
+          <input id="bias" type="range" min="2" max="4" step="0.01" value="3" aria-describedby="bias-help">
+          <div class="slider-ends"><span>100× / LESS BIAS</span><span>10,000× / MORE BIAS</span></div>
+          <p id="bias-help">More assumed bias means fewer people worldwide outrank Marcus. This changes your sandbox estimate, not the published median.</p>
+          <div class="sandbox-result"><span>YOUR SCENARIO</span><strong id="sandbox-rank">—</strong><small id="sandbox-top">—</small></div>
+          <button id="reset" class="reset">RESET TO THE MEDIAN ↺</button>
+          <details><summary>The actual equation</summary><code>p = sample users above / sample size<br>q = p / [bias × (1 − p) + p]<br>rank = 1 + floor((population − 1) × q)</code><p>A scenario median is not evidence of the most likely real-world rank. Total usage history and active-user population refer to different windows. The model doesn't resolve that mismatch.</p></details>
+        </div>
+      </div>
+      <div class="sources"><span>SOURCES & CLOCKS</span><a href="https://tokscale.ai/leaderboard" target="_blank" rel="noopener">Tokscale public leaderboard ↗</a><a href="/reference.json">Complete numeric reference sample ↗</a><a href="https://www.viberank.app/" target="_blank" rel="noopener">Viberank / additional board reviewed ↗</a><a href="https://x.com/thsottiaux/status/2094252447271366730" target="_blank" rel="noopener">Reported 25M milestone ↗</a><a href="https://ccusage.com/guide/codex/" target="_blank" rel="noopener">ccusage measurement ↗</a><p id="sample-date">Sample timestamp loading.</p><p>Numerical extrapolation uses the full captured Tokscale all-time sample, across every available page. Viberank was reviewed as another opt-in leaderboard; it contributes no observations to this model and Marcus has not submitted his usage there.</p><p>The 25M figure is a reported active-user milestone, not a verified monthly cohort. Missing logs, parser changes, multi-tool totals, and self-selection all matter. The source repository includes the full <a href="https://github.com/marcusykim/codex-tokenmaxxing/blob/main/docs/METHODOLOGY.md">method and derivation ↗</a>.</p></div>
+    </section>
+    <section class="fork-section" aria-labelledby="fork-title"><div><p class="eyebrow">03 / YOUR TURN, GOBLIN</p><h2 id="fork-title">FORK THE WHOLE<br>DAMN THING.</h2><p>Bring your own local usage. Keep your raw sessions private.<br>Run the dashboard free. Own every assumption.</p></div><a id="repo-bottom" class="fork-button" href="https://github.com/marcusykim/codex-tokenmaxxing" target="_blank" rel="noopener">GET THE SOURCE <span aria-hidden="true">↗</span><small>PUBLIC GITHUB / MIT LICENSE</small></a></section>
+  </main>
+  <footer><span>MARCUS KIM / TOKENMAXXING</span><span>UNOFFICIAL. SELF-REPORTED. GLORIOUSLY OVEREXPLAINED.</span><a href="https://x.com/marcusykim" target="_blank" rel="noopener">@marcusykim ↗</a></footer>
+  <noscript><div class="error">Enable JavaScript to calculate the ranking. You can still <a href="/data.json">download the report</a>.</div></noscript>
+</body>
+</html>

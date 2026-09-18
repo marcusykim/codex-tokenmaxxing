@@ -1,0 +1,12 @@
+{
+  "name": "Marcus Kim",
+  "githubUsername": "marcusykim",
+  "repository": "https://github.com/marcusykim/codex-tokenmaxxing",
+  "website": "https://marcus-codex-tokenmaxxing.web.app",
+  "timezone": "America/Los_Angeles",
+  "population": 25000000,
+  "biasLow": 100,
+  "biasMedian": 1000,
+  "biasHigh": 10000,
+  "pricingToolVersion": "20.0.22"
+}

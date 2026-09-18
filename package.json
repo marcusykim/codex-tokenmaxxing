@@ -1,0 +1,16 @@
+{
+  "name": "codex-tokenmaxxing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A monochrome Codex usage dashboard with an openly assumption-based world-rank scenario model.",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "refresh": "node scripts/refresh.mjs",
+    "test": "node --test",
+    "check": "node scripts/check.mjs",
+    "deploy": "firebase deploy --only hosting"
+  },
+  "engines": { "node": ">=22" },
+  "license": "MIT"
+}

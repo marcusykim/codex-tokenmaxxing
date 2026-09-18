@@ -1,0 +1,14 @@
+node_modules/
+.firebase/
+.firebaserc
+firebase-debug.log*
+*-debug.log*
+.env*
+!.env.example
+.DS_Store
+.local/
+qa/
+credentials*
+auth.json
+*.pem
+*.key

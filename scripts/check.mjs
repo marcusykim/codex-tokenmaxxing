@@ -1,0 +1,12 @@
+import { readFileSync, readdirSync } from 'node:fs';
+import { estimate } from '../public/model.js';
+const publicDir = new URL('../public/', import.meta.url);
+const data = JSON.parse(readFileSync(new URL('data.json', publicDir)));
+const expected = estimate(data.reference.shareAbove, data.model);
+for (const key of Object.keys(expected)) if (data.model[key] !== expected[key]) throw new Error('Published rank differs from formula');
+const files = readdirSync(publicDir, { recursive: true });
+const forbidden = /(^|\/)(\.env|auth|credentials|sessions|rollout)|\.pem$|debug\.log/;
+if (files.some(file => forbidden.test(file))) throw new Error('Unexpected private filename in public directory');
+const html = readFileSync(new URL('index.html', publicDir), 'utf8');
+for (const match of html.matchAll(/(?:src|href)="(\/[^"#?]+)"/g)) readFileSync(new URL(match[1].slice(1), publicDir));
+console.log('Public assets, ranking math, and filename checks passed.');
