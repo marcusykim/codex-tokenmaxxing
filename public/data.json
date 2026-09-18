@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "capturedAt": "2026-09-18T04:02:26.290Z",
+  "capturedAt": "2026-09-18T04:10:33.147Z",
   "timezone": "America/Los_Angeles",
   "owner": {
     "name": "Marcus Kim",
@@ -15,16 +15,16 @@
     "lastDate": "2026-09-17",
     "activeDays": 119,
     "totals": {
-      "inputTokens": 748936317,
-      "outputTokens": 48884898,
-      "cacheReadTokens": 18500769024,
+      "inputTokens": 748995062,
+      "outputTokens": 48901968,
+      "cacheReadTokens": 18503936512,
       "cacheCreationTokens": 0,
-      "totalTokens": 19298590239,
-      "costUSD": 14142.473084919995
+      "totalTokens": 19301833542,
+      "costUSD": 14147.081522919994
     },
     "today": "2026-09-17",
-    "todayTokens": 49193016,
-    "lastSevenDaysTokens": 1387781017,
+    "todayTokens": 52436319,
+    "lastSevenDaysTokens": 1391024320,
     "bestDay": "2026-08-31",
     "bestDayTokens": 794359418,
     "daily": [
@@ -1092,12 +1092,12 @@
       },
       {
         "date": "2026-09-17",
-        "inputTokens": 3521958,
-        "outputTokens": 135826,
-        "cacheReadTokens": 45535232,
+        "inputTokens": 3580703,
+        "outputTokens": 152896,
+        "cacheReadTokens": 48702720,
         "cacheCreationTokens": 0,
-        "totalTokens": 49193016,
-        "costUSD": 58.6798648
+        "totalTokens": 52436319,
+        "costUSD": 63.288302800000004
       }
     ]
   },
