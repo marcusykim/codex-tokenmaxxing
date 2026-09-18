@@ -16,7 +16,7 @@ export function buildReport(source, reference, config, now = new Date()) {
     return clean;
   }).sort((a, b) => a.date.localeCompare(b.date));
   const totals = Object.fromEntries(fields.map(field => [field, daily.reduce((sum, day) => sum + day[field], 0)]));
-  for (const field of fields) if (Math.abs(totals[field] - source.totals[field]) > 0.0001) throw new Error(`Source total mismatch: ${field}.`);
+  for (const field of fields) if (!Number.isFinite(source.totals?.[field]) || Math.abs(totals[field] - source.totals[field]) > 0.0001) throw new Error(`Source total mismatch: ${field}.`);
   if (reference.tokens.some(n => !Number.isSafeInteger(n) || n < 0)) throw new Error('Invalid sample tokens.');
   const today = new Intl.DateTimeFormat('en-CA', { timeZone: config.timezone, year: 'numeric', month: '2-digit', day: '2-digit' }).format(now);
   const cutoff = new Date(`${today}T12:00:00Z`);

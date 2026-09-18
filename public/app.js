@@ -67,10 +67,18 @@ async function load() {
     const data = await response.json();
     if (data.schemaVersion !== 1 || !Number.isFinite(data.model?.median)) throw new Error('Invalid report');
     render(data); byId('load-error').hidden = true;
-  } catch { byId('load-error').hidden = false; }
+  } catch {
+    byId('load-error').hidden = false;
+    byId('updated').textContent = report ? 'REFRESH FAILED / SHOWING THE LAST SNAPSHOT' : 'USAGE UNAVAILABLE';
+  }
 }
 byId('bias').addEventListener('input', sandbox);
 byId('reset').addEventListener('click', () => { byId('bias').value = 3; sandbox(); });
 byId('retry').addEventListener('click', load);
+window.addEventListener('scroll', () => {
+  const chart = byId('chart');
+  const rect = chart.getBoundingClientRect();
+  if ((rect.bottom < 0 || rect.top > innerHeight) && chart.contains(document.activeElement)) document.activeElement.blur();
+}, { passive: true });
 load();
 setInterval(load, 60000);

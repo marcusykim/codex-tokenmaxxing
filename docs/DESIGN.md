@@ -2,7 +2,7 @@
 
 Task subtype: a personal activity and ranking dashboard, with an uncertainty calculator and evidence that readers can inspect.
 
-Current reference products reviewed visually on September 17, 2026: [Tokscale](https://tokscale.ai/leaderboard) for comparable counts and period visibility, [Monkeytype](https://monkeytype.com/leaderboards) for compact performance hierarchy, and [Chess.com](https://www.chess.com/leaderboard) for rank-first ordering. Their layouts and branding are not copied.
+Current reference products reviewed visually on September 17, 2026: [Tokscale](https://tokscale.ai/leaderboard) for comparable counts and period visibility, [Monkeytype](https://monkeytype.com/leaderboards) for compact performance hierarchy, and [Viberank](https://www.viberank.app/) for token-specific ranking grammar. Their layouts and branding are not copied. Chess.com was considered but its challenge page was excluded as visual evidence.
 
 Three directions considered: a terminal-style ledger; an editorial data receipt; and a monochrome underground arcade scoreboard. The scoreboard was selected because the requested exaggerated rank and original cartoon can share a clear hierarchy. The numeric report and sources retain a sober typographic structure. No neon dashboard, fake live activity, decorative progress percentage, or marketing testimonial was introduced.
 
