@@ -32,7 +32,9 @@ Static HTML, CSS, and native JavaScript modules; no application dependencies or 
 
 `public/reference.json` contains a dated complete numeric Tokscale reference sample. It is not continuously synchronized, Codex-only, or representative of the population. A fork must preserve source attribution and limitations if it uses this dataset or model.
 
-The example owner's hourly refresh/deploy/X posting is private operational configuration and is not installed by this repository. Deploying a fork does not transmit usage to Marcus or automatically publish posts. [Community leaderboard and optional tipping](TODO.md) are deferred features.
+The example owner's hourly refresh/deploy/X posting is private operational configuration and is not installed by this repository. Deploying a fork does not transmit usage to Marcus or automatically publish posts. The [community leaderboard](TODO.md) remains a planned feature. An optional Buy Me a Coffee profile link is supported.
+
+To enable the optional tip button, set `tipUrl` in `site.config.json` to your actual `https://buymeacoffee.com/YOUR_HANDLE` profile and run `npm run refresh` before deploying. The button stays hidden until a valid profile URL is configured. Verify that the profile belongs to you. Complete Buy Me a Coffee payout setup before expecting paid support.
 
 ## License
 

@@ -1,6 +1,7 @@
 # Roadmap
 
-- [ ] Add a Buy Me a Coffee tip button for the Mountain Dew fund after the owner provides or creates the actual account link. Deferred by Marcus; no payment integration is active.
+- [x] Add a Buy Me a Coffee button linked to the verified creator page.
+- [ ] Complete Buy Me a Coffee payout setup to receive support.
 
 - [ ] Create an opt-in community leaderboard for people who deploy their own copy of this dashboard.
   - Register an owner and a public deployment URL with explicit consent.

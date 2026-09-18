@@ -8,5 +8,6 @@
   "biasLow": 100,
   "biasMedian": 1000,
   "biasHigh": 10000,
-  "pricingToolVersion": "20.0.22"
+  "pricingToolVersion": "20.0.22",
+  "tipUrl": "https://buymeacoffee.com/marcusykim"
 }

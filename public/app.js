@@ -36,7 +36,12 @@ function render(data) {
   byId('sample-date').textContent = 'REFERENCE SNAPSHOT / ' + new Date(data.reference.capturedAt).toISOString().replace('T', ' ').slice(0, 16) + ' UTC. Usage snapshot / ' + formattedTime + '.';
   for (const id of ['repo-top', 'repo-bottom']) byId(id).href = data.owner.repository;
   const tip = byId('tip-button');
-  if (tip && data.owner.tipUrl) { tip.href = data.owner.tipUrl; tip.removeAttribute('aria-disabled'); }
+  if (tip) {
+    const validTip = /^https:\/\/(?:www\.)?buymeacoffee\.com\/[A-Za-z0-9_-]+\/?$/.test(data.owner.tipUrl || '');
+    tip.hidden = !validTip;
+    if (validTip) tip.href = data.owner.tipUrl;
+    else tip.removeAttribute('href');
+  }
   const daily = new Map(m.daily.map(d => [d.date, d]));
   const days = [];
   for (let ago = 29; ago >= 0; ago--) {
